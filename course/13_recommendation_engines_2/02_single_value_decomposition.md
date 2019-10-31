@@ -32,3 +32,8 @@ Where:
 
 Therefore, given $k$ latent factors, we have to find $k*(m + n +1)$ values related to them.
 
+Three main takeaways from SVD:
+  * The latent factors retrieved from SVD aren't actually labeled.
+  * We can get an idea of how many latent factors we might want to keep by using the Sigma matrix.
+  * SVD in NumPy will not work when our matrix has missing values. This makes this technique less than useful for our current user-movie matrix.
+
